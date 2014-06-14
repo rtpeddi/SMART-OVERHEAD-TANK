@@ -18,7 +18,7 @@ x4:
 			mov ah,2
 	.elseif	al >= 0 && al <= 5 ; @low
 			mov ah,0
-	.else	; @normal
+	.else	
 			mov ah,1
 	.endif
 	
@@ -37,7 +37,7 @@ x4:
 	jmp 	rt
 	
 x0:	call flowin ;when @zero
-	jmp rt
+	jmp 	rt
 
 x1: .if 	ah != 0 ; when @min
 			call flowin 
