@@ -27,7 +27,7 @@ Movie ID: <input type="text" id="MovieId" value="">
 function myFunction3() {
 var x = document.getElementById("MovieTitle").value;
 var xmlhttp = new XMLHttpRequest();
-var url = "http://www.omdbapi.com/?t="+x+"&y=&plot=full&r=json";
+var url = "https://www.omdbapi.com/?t="+x+"&y=&plot=full&r=json";
 
 xmlhttp.onreadystatechange = function() {
     if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
@@ -42,7 +42,7 @@ xmlhttp.send();
 function myFunction1() {
 var x = document.getElementById("MovieId").value;
 var xmlhttp = new XMLHttpRequest();
-var url = "http://www.omdbapi.com/?i="+x+"&plot=full&r=json";
+var url = "https://www.omdbapi.com/?i="+x+"&plot=full&r=json";
 
 xmlhttp.onreadystatechange = function() {
     if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
